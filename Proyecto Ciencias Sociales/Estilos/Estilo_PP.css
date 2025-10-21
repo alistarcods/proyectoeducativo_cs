@@ -1,0 +1,113 @@
+/* Variables de colores */
+:root {
+  --color-fondo: #caf0f8;
+  --color-principal: #0077b6;
+  --color-hover: #023e8a;
+  --color-texto: #03045e;
+}
+
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-fondo);
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor principal */
+.contenedor {
+  text-align: center;
+  background: white;
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.titulo-principal {
+  color: var(--color-principal);
+  margin-bottom: 40px;
+}
+
+/* Menú de enlaces */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilo de cada enlace del menú */
+.enlace-menu {
+  background-color: var(--color-principal);
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto al pasar el mouse */
+.enlace-menu:hover {
+  background-color: var(--color-hover);
+  transform: scale(1.05);
+}
+body {
+  background-image: url('fondos/Fondo.png');
+  background-repeat: repeat;
+  background-size: auto;
+}
+p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+a {
+  color: var(--color-principal);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-enlace-hover);
+  text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primario);
+  margin-bottom: 15px;
+  text-align: center;
+}
+/* Animación para que los contenedores "reluzcan" al abrir la página */
+@keyframes relucir {
+  0% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.3); /* Sin brillo al principio */
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Brillo intenso */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.3); /* Vuelve a la normalidad */
+    transform: scale(1); /* Vuelve al tamaño normal */
+  }
+}
+
+/* Estilos de los contenedores */
+.contenedor {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0.3); /* Inicialmente sin brillo */
+  transition: box-shadow 0.3s ease;
+  animation: relucir 1.5s ease-out; /* Aplicamos la animación */
+}
+
+/* Efecto hover de contenedores (opcional) */
+.contenedor:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Al pasar el ratón, resalta */
+}

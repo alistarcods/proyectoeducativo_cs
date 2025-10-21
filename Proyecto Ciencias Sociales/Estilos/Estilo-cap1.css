@@ -1,0 +1,95 @@
+/* Variables de colores */
+:root {
+    --color-fondo: #f0f4f8; /* Fondo suave */
+    --color-principal: #0077b6; /* Azul primario */
+    --color-secundario: #023e8a; /* Azul más oscuro */
+    --color-texto: #03045e; /* Color texto oscuro */
+    --color-acento: #00b4d8; /* Color para acentos (botones, links) */
+  }
+  
+  /* Reset de márgenes y padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fondo general */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+  }
+  
+  /* Contenedor principal */
+  .contenedor-general {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo de los encabezados */
+  header h1 {
+    color: var(--color-principal);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header .subtitulo {
+    color: var(--color-secundario);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenido de la página */
+  .contenido {
+    display: flex;
+    flex-direction: column;  /* Cambiado a columna */
+    gap: 20px;
+  }
+  /* Estilo para cada contenedor de texto */
+  .contenedor {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contenedor h2 {
+    color: var(--color-principal);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .contenedor p {
+    font-size: 1rem;
+    color: var(--color-texto);
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para los enlaces dentro del contenido */
+  a {
+    color: var(--color-acento);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .contenedor-general {
+      padding: 10px;
+    }
+  
+    .contenido {
+      grid-template-columns: 1fr; /* En móviles, todo en una columna */
+    }
+  }
+body {
+  background-image: url('fondos/Fondo.png');
+  background-repeat: repeat;
+  background-size: auto;
+}

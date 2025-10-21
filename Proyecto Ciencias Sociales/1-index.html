@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="Estilos/Estilo_index.css">
+</head>
+<body>
+    <header class="card">
+    <h1>MINISTERIO DE EDUCACIÓN Y CIENCIAS</h1>
+    <h2>COLEGIO NACIONAL </h2>
+    <h3>PROYECTO EDUCATIVO</h3>
+</header>
+    <header class="card">
+    <h2>Titulo:</h2>
+    <p>DISEÑAR JUEGOS INTERACTIVOS EDUCATIVOS PARA ALUMNOS DEL SEXTO GRADO DE LA ESCUELA N° 408 AMADO BITTAR, ITAUGUÁ, AÑO 2025.</p>
+    <h2>SUBTEMA:</h2>
+    <p>JUEGOS INTERACTIVOS DE CIENCIAS SOCIALES</p>
+    </header>
+    <img src="imagenes/1000864027-removebg-preview.png">
+
+    <h2 class="desplegable" onclick="mostrarLista()"> Integrantes</h2>
+    <div id="listaNombres" class="contenido">
+        <ul>
+          <li>Alicia Servian</li>
+          <li>Monserrath Fernandez</li>
+          <li>Alvaro Lopez</li>
+          <li>Stefany Encina</li>
+          <li>Imanol Britez</li>
+          <li>Samira Resquin</li>
+        </ul>
+      </div>
+      <a href="2-Pagina_pricipal.html">
+    <h2 class="titulo-linkeado">Contenidos </h2>
+        </a>
+        <p><strong>ITAUGUÁ-PARAGUAY <br> 2025</strong></p>
+
+        <script>
+            function mostrarLista() {
+              const lista = document.getElementById('listaNombres');
+              if (lista.style.display === "none" || lista.style.display === "") {
+                lista.style.display = "block";
+              } else {
+                lista.style.display = "none";
+              }
+            }
+          </script>
+</body>
+</html>
+

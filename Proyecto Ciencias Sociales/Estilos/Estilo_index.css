@@ -1,0 +1,215 @@
+/* Archivo: estilo-general.css */
+
+/* Configuración base */
+:root {
+    --color-fondo: #e0f7fa; /* celeste clarito */
+    --color-primario: #0277bd; /* azul marino suave */
+    --color-secundario: #01579b; /* azul marino más oscuro */
+    --color-texto: #013243; /* azul casi negro */
+    --color-boton: #0288d1;
+    --color-boton-hover: #0277bd;
+    --color-enlace: #01579b;
+    --color-enlace-hover: #013243;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Encabezados */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primario);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Párrafos */
+  p {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Enlaces */
+  a {
+    color: var(--color-enlace);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--color-enlace-hover);
+    text-decoration: underline;
+  }
+  
+  /* Botones */
+  button, .btn {
+    background-color: var(--color-boton);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: var(--color-boton-hover);
+  }
+  
+  /* Formularios */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid var(--color-primario);
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--color-boton);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--color-boton-hover);
+  }
+  
+  /* Tarjetas / Contenedores */
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(2, 119, 189, 0.2); /* sombra azulita */
+    margin-bottom: 20px;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  
+  /* Secciones */
+  section {
+    margin-bottom: 40px;
+  }
+  .desplegable {
+    cursor: pointer;
+    background-color: var(--color-primario);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+
+  .desplegable:hover {
+    background-color: var(--color-boton-hover);
+  }
+
+  .contenido {
+    display: none;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid var(--color-primario);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .contenido ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .contenido ul li {
+    margin: 5px 0;
+    color: var(--color-texto);
+    text-align: center;
+  }
+a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Mantiene el color del título */
+}
+:root {
+    --color-primario: #0077b6; /* azul marino medio */
+    --color-boton-hover: #023e8a; /* azul más oscuro */
+    --color-texto: #03045e; /* azul bien oscuro */
+  }
+
+  /* Estilo especial para los títulos que son links */
+  .titulo-linkeado {
+    display: block;
+    cursor: pointer;
+    background-color: var(--color-primario);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+
+  .titulo-linkeado:hover {
+    background-color: var(--color-boton-hover);
+  }
+  body {
+    background-image: url('fondos/Fondo.png');
+    background-repeat: repeat;
+    background-size: auto;
+  }
+  
+/* Animación para que los contenedores "reluzcan" al abrir la página */
+@keyframes relucir {
+  0% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.3); /* Sin brillo al principio */
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Brillo intenso */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.3); /* Vuelve a la normalidad */
+    transform: scale(1); /* Vuelve al tamaño normal */
+  }
+}
+
+/* Estilos de los contenedores */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0.3); /* Inicialmente sin brillo */
+  transition: box-shadow 0.3s ease;
+  animation: relucir 1.5s ease-out; /* Aplicamos la animación */
+}
+
+/* Efecto hover de contenedores (opcional) */
+.card:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Al pasar el ratón, resalta */
+}

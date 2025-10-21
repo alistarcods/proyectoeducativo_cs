@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #b947a6, #8ca0f8, #e67888);
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background-color: #ffd6e7;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff69b4;
+}
+
+.personajes {
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta {
+  width: auto;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.cinnamoroll {
+  background-color: #BEEBFA;
+  color: #004466;
+}
+
+.kuromi {
+  background-color: #D3A4F9;
+  color: #2c003e;
+}
+
+.melody {
+  background-color: #FFD6E7;
+  color: #7b003c;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #fdf0ff;
+  border-radius: 10px;
+  font-style: italic;
+}
